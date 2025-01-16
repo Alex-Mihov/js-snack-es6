@@ -19,3 +19,7 @@ console.log(biciDaCorsa);
 
 
 // individuare la bici con il peso minore 
+let pesoBici = biciDaCorsa.map(pesoMin => pesoMin.peso)
+
+console.log(pesoBici);
+
