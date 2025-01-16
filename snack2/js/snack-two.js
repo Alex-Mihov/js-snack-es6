@@ -26,14 +26,19 @@ console.log(squadreCalcio);
 let risultato = [];
 
 for (let k = 0; k < squadreCalcio.length; k++) {
-    risultato.push(squadreCalcio[k].nome, squadreCalcio[k].falliSubiti)
+    risultato.push({
+        nome: squadreCalcio[k].nome,
+        falliSubiti: squadreCalcio[k].falliSubiti
+    });
 }
 
 console.log(risultato)
+
 
 
 // funzione generale per numeri casuali
 function getRandomNumber(min, max) {
     return (Math.floor(Math.random() * (max - min +1)) + min);
 }
+
 
