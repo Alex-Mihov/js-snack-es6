@@ -27,6 +27,14 @@ console.log(pesoBici);
 const pesoMinore = pesoBici.reduce((min, pesoBici) => Math.min(min, pesoBici), pesoBici[0]);
 
 // individua la bici con il peso minore
+const nomeBiciConPesoMin = biciDaCorsa.find(bici => bici.peso === pesoMinore)
+console.log(nomeBiciConPesoMin);
+
+// risultato finale
+let risultato = `la bici con il peso minore è la ${nomeBiciConPesoMin.nome}, con un peso di ${pesoMinore} kg`
+console.log(risultato);
+
+
 
 
 
