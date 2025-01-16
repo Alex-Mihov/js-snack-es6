@@ -23,9 +23,17 @@ console.log(squadreCalcio);
 
 
 // creazione nuovo array con solo i nomi e i falli subiti 
+let risultato = [];
+
+for (let k = 0; k < squadreCalcio.length; k++) {
+    risultato.push(squadreCalcio[k].nome, squadreCalcio[k].falliSubiti)
+}
+
+console.log(risultato)
 
 
 // funzione generale per numeri casuali
 function getRandomNumber(min, max) {
     return (Math.floor(Math.random() * (max - min +1)) + min);
 }
+
