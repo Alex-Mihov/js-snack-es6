@@ -4,7 +4,17 @@
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 // creazione array con gli oggetti 
+let squadreCalcio = [
+    { nome: "Juventus", punti: 0, falliSubiti: 0 },
+    { nome: "Inter", punti: 0, falliSubiti: 0 },
+    { nome: "Milan", punti: 0, falliSubiti: 0 },
+    { nome: "Roma", punti: 0, falliSubiti: 0 },
+    { nome: "Napoli", punti: 0, falliSubiti: 0 }
+]
+console.log(squadreCalcio);
+
 
 // generazione numeri casuali dei punti fatti e dei falli subiti
+
 
 // creazione nuovo array con solo i nomi e i falli subiti 
