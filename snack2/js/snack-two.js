@@ -16,8 +16,16 @@ console.log(squadreCalcio);
 
 // generazione numeri casuali dei punti fatti e dei falli subiti
 for (let i = 0; i < squadreCalcio.length; i++) {
-    squadreCalcio[i].punti = Math.floor(Math.random() * 40) + 1;
-    squadreCalcio[i].falliSubiti = Math.floor(Math.random() * 40) + 1;
+    squadreCalcio[i].punti = getRandomNumber(1, 50)
+    squadreCalcio[i].falliSubiti = getRandomNumber(1, 50)
 }
 console.log(squadreCalcio);
+
+
 // creazione nuovo array con solo i nomi e i falli subiti 
+
+
+// funzione generale per numeri casuali
+function getRandomNumber(min, max) {
+    return (Math.floor(Math.random() * (max - min +1)) + min);
+}
